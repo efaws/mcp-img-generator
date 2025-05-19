@@ -1,13 +1,12 @@
 [project]
 name = "img-generation"
 version = "0.1.0"
-description = "Add your description here"
+description = "A MCP based image generation service project that provides the ability to convert HTML code images into images."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "boto3>=1.38.15",
     "mcp>=1.7.1",
-    "minio>=7.2.15",
     "playwright>=1.52.0",
 ]
 
