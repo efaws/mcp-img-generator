@@ -1,6 +1,6 @@
 [project]
 name = "img-generation"
-version = "0.1.0"
+version = "0.1.1"
 description = "A MCP based image generation service project that provides the ability to convert HTML code images into images."
 readme = "README.md"
 requires-python = ">=3.12"
