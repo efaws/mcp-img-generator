@@ -42,16 +42,30 @@ git clone [repository-url]
 cd mcp_img_generation
 ```
 
-2.直接运行项目：
+2.下载  uv：
+```bash
+pip install uv
+```
+
+3.运行项目：
 ```bash
 uv run main.py
 ```
+
+> **注意**：项目使用 Playwright 的 Chromium 浏览器驱动，首次运行时会自动从官方源下载浏览器驱动包。
+> 若因网络原因可能导致下载失败，建议：
+> - 多次重试下载
+> - 手动下载：
+>  ```bash
+>  playwright install-deps（linux系统才需要）
+>  playwright install chromium
+
+
 
 ## 项目依赖
 
 - boto3 >= 1.38.15
 - mcp >= 1.7.1
-- minio >= 7.2.15
 - playwright >= 1.52.0
 
 ## 项目结构
@@ -70,14 +84,8 @@ mcp_img_generation/
 2. 遵循 Python 代码规范
 3. 提交代码前进行测试
 
-## 许可证
-
-[添加许可证信息]
 
 ## 贡献指南
 
 欢迎提交 Issue 和 Pull Request 来帮助改进项目。
 
-## 联系方式
-
-[添加联系方式]
